@@ -9,10 +9,10 @@ public class Berserk extends Hero {
 
     @Override
     public void applySuperPower(Boss boss, Hero[] heroes) {
-        int damageBoss = boss.getDamage() / 2;
+        this.setSavedDamage(boss.getDamage()/ 2);
         for (int i = 0; i < heroes.length; i++) {
             if (heroes.length > 0) {
-                boss.setHealth(boss.getHealth() - damageBoss);
+                boss.setHealth(boss.getHealth() -getSavedDamage());
                 break;
             }
         }

@@ -2,7 +2,8 @@ package kg.geektech.game.players;
 
 import kg.geektech.game.general.RPG_Game;
 
-public class Boss extends GameEntity {private SuperAbility defence;
+public class Boss extends GameEntity {
+    private SuperAbility defence;
 
     public Boss(int health, int damage, String name) {
         super(health, damage, name);
