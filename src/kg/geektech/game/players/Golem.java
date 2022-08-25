@@ -11,7 +11,7 @@ public class Golem extends Hero {
         for (int i = 0; i < heroes.length; i++) {
             if (heroes[i].getHealth()> 0) {
                 boss.setHealth(boss.getHealth() - damageBoss);
-                System.out.println(this.getName()+": Received one fifth of the damage");
+                System.out.println(this.getName()+": Received one fifth of the damage: "+damageBoss);
                 break;
             }
         }

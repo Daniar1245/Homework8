@@ -13,6 +13,7 @@ public class Berserk extends Hero {
         for (int i = 0; i < heroes.length; i++) {
             if (heroes.length > 0) {
                 boss.setHealth(boss.getHealth() -getSavedDamage());
+                System.out.println(this.getName()+": inflicted damage: ");
                 break;
             }
         }

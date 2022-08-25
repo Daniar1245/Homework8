@@ -9,7 +9,7 @@ public class RPG_Game {
     public static Random random = new Random();
 
     public static void startGame() {
-        Boss boss = new Boss(3000, 50, "Tanos");
+        Boss boss = new Boss(5000, 50, "Tanos");
         Warrior warrior = new Warrior(270, 10, "Spartak");
         Medic doc = new Medic(250, 5, 15, "Aibolit");
         Magic magic = new Magic(260, 15, "Hendelf");
@@ -17,7 +17,8 @@ public class RPG_Game {
         Medic assistant = new Medic(290, 10, 5, "Dr.Strange");
         Golem golem = new Golem(300,5,"Abeliks");
         Thor thor = new Thor(250,25,"Kris");
-        Hero[] heroes = {warrior, doc, magic, berserk, assistant,golem,thor};
+        Antman antman = new Antman(250,15,"Michael");
+        Hero[] heroes = {warrior, doc, magic, berserk, assistant,golem,thor,antman};
 
         printStatistics(boss, heroes);
 
